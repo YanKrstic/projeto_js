@@ -10,8 +10,8 @@
 </head>
 <body>
     <br>
-    <section>
-        <div id="texto">CRIE UMA NOVA TAREFA:</div>
+    <section id="principal">
+        <div id="texto">CRIE UMA NOVA TAREFA:</div> 
         <div class="teste">
             <input type="text" id="ipt-nome" class="input" placeholder="Digite um nome para a nova tarefa"><br>
             <input type="text" id="ipt-descricao" class="input" placeholder="Digite uma descrição para a nova tarefa"><br>
@@ -26,6 +26,17 @@
     <div id="lista-tarefas">
         <section class="modelo-tarefa" id="pri">
             <div class="nome-tarefa"></div>
+            <div class="descricao-tarefa"></div>
+            <button id="remover" onclick="RemoverTarefa(this)">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                  </svg>
+            </button>
+            <button id="desc">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1"/>
+                  </svg>
+            </button>
         </section>
     </div>
 

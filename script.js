@@ -20,7 +20,10 @@ function NovaTarefa(){
     desc.value = ''
 
     const nomeTarefa = novaTarefa.querySelector('.nome-tarefa')
+    const descricaoTarefa = novaTarefa.querySelector('.descricao-tarefa')
     nomeTarefa.textContent = nomeV
+    descricaoTarefa.textContent = descV
+    
     novaTarefa.style.display = 'block'
     
     const listaTarefas = document.getElementById('lista-tarefas')
@@ -30,5 +33,11 @@ function NovaTarefa(){
     novaTarefa.classList.remove('modelo-tarefa')
     }
 
+}
+function RemoverTarefa(botao){
+
+    let tarefa = botao.parentNode
+
+    tarefa.remove()
 }
 
