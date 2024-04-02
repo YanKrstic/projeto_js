@@ -1,3 +1,40 @@
-#teste{
-    color: rgb(104, 0, 0);
+body{
+    background-color:rgb(0, 84, 133);
+    font-family:Arial, Helvetica, sans-serif;
+}
+section{
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 530px;
+    margin: auto;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+div{
+    
+}
+.input{
+    padding: 10px;
+    width: 470px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+}
+
+#butao{
+    border-radius: 10px;
+    width: 270px;
+    height: 35px;
+    background-color: rgb(60, 219, 60);
+    cursor: pointer;
+
+}
+#texto{  
+    margin-bottom: 8px;
+}
+#pri{
+    display: none;
 }
