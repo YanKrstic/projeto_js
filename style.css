@@ -29,14 +29,13 @@ section{
 }
 #texto{  
     margin-bottom: 8px;
+    font-size: large;
 }
 #pri{
     display: none;
 }
 #lista-tarefas{
-    display: flex;
     font-size: 30px;
-    
 }
 #remover{
     border-radius: 10px;
@@ -45,10 +44,13 @@ section{
     background-color: rgb(184, 0, 0);
     cursor: pointer;
 }
-#desc{
+.desc{
     border-radius: 10px;
     width: 40px;
     height: 40px;
     background-color: rgb(224, 224, 224);
     cursor: pointer;
+}
+.descricao-tarefa{
+    font-size: medium;
 }

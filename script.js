@@ -11,11 +11,11 @@ function NovaTarefa(){
     let nomeV = nome.value
     let descV = desc.value
     
-    if(nomeV.replace(/\s/g,'') == "" || descV.replace(/\s/g,'') == "" ){
-        alert("Preencha as informações")
+    if(nomeV.replace(/\s/g,'') == ""){
+        alert("De um nome a tarefa")
     }
     else{
-
+    
     nome.value = ''
     desc.value = ''
 
@@ -24,12 +24,17 @@ function NovaTarefa(){
     nomeTarefa.textContent = nomeV
     descricaoTarefa.textContent = descV
     
+    descricaoTarefa.style.display = 'none'
     novaTarefa.style.display = 'block'
     
+    if(descV.replace(/\s/g,'') == ""){
+        let butao_desc = novaTarefa.querySelector('.desc')
+        butao_desc.style.display = "none"
+    }
+
     const listaTarefas = document.getElementById('lista-tarefas')
     listaTarefas.appendChild(novaTarefa)
-
-
+    
     novaTarefa.classList.remove('modelo-tarefa')
     }
 
@@ -37,7 +42,22 @@ function NovaTarefa(){
 function RemoverTarefa(botao){
 
     let tarefa = botao.parentNode
-
     tarefa.remove()
 }
+
+function Desc(botao){
+
+    let tarefa = botao.parentNode
+    let txt = tarefa.querySelector('.descricao-tarefa')
+    if (txt.style.display === 'none') {
+        
+        txt.style.display = 'block'
+        
+    }else {
+        
+        txt.style.display = 'none'
+    }
+}
+
+
 
